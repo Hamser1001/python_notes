@@ -250,3 +250,7 @@ raise ValueError() – Manually raises a ValueError exception.
 Example:
 raise ValueError("Invalid input")
 """
+
+🌍 Global Variables
+
+global – Allows a function to modify a variable defined outside of it.
