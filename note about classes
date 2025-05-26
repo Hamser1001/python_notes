@@ -1,0 +1,75 @@
+# Define notes for enumerate, get, update, keys, values, __str__, and class basics
+
+class_notes = """
+📚 Dictionary Methods & Built-ins
+
+enumerate() – Adds a counter to an iterable and returns it as an enumerate object.
+Example:
+for i, value in enumerate(["a", "b", "c"]):
+    print(i, value)
+Output:
+0 a
+1 b
+2 c
+
+get() – Returns the value for a given key, or a default if the key doesn't exist.
+Example:
+my_dict.get("age", "Unknown") → "Unknown"
+
+update() – Updates a dictionary with another dictionary or with key-value pairs.
+Example:
+my_dict.update({"age": 30})
+
+keys() – Returns a view object of all keys in the dictionary.
+Example:
+my_dict.keys() → dict_keys(['name', 'age'])
+
+values() – Returns a view object of all values in the dictionary.
+Example:
+my_dict.values() → dict_values(['Alice', 30])
+
+__str__() – Special method that defines what should be returned when str() is called on an object.
+Example:
+class MyClass:
+    def __str__(self):
+        return "This is a MyClass instance"
+obj = MyClass()
+print(str(obj)) → "This is a MyClass instance"
+
+
+🏗️ Classes & Objects (Learned via Sudoku Solver)
+
+class – A blueprint for creating objects.
+Example:
+class Dog:
+    def __init__(self, name):
+        self.name = name
+
+    def bark(self):
+        print(f"{self.name} says woof!")
+
+dog = Dog("Buddy")
+dog.bark() → Buddy says woof!
+
+__init__ – The constructor method, runs when an object is created.
+
+self – Refers to the current instance of the class; used to access attributes and methods.
+
+Attributes – Variables that belong to the object (e.g., self.name).
+
+Methods – Functions defined inside the class that operate on the object.
+
+Encapsulation – Keeping data and behavior bundled inside objects.
+
+Example from Sudoku Solver:
+- A SudokuBoard class was created to represent the game board.
+- Methods were added to display the board, solve it recursively, and check if placing a number is valid.
+- __str__ was overridden to format the board nicely when printed.
+
+Classes help:
+✅ Organize related code (data + behavior)
+✅ Make code reusable and scalable
+✅ Represent real-world entities (like a Sudoku board)
+
+"""
+
