@@ -3,29 +3,31 @@
 sorted_notes = """
 📌 Python Basics
 
-print() – Prints output to the screen.
+```print() – # Prints output to the screen.```
 Example:
-print("Hello, world!")
+```print("Hello, world!")```
 
-input() – Reads input from the user.
+```input() – # Reads input from the user.```
 Example:
-name = input("Enter your name: ")
+```name = input("Enter your name: ")```
 
 pass – Does nothing; used as a placeholder in a block of code.
 Example:
+```
 if True:
     pass
+```
 
 end= in print – Changes what is printed at the end of a print statement (default is newline).
 Example:
-print("Hello", end="!") → prints "Hello!" without a new line after
+```print("Hello", end="!") # → prints "Hello!" without a new line after```
 
 
 🔤 String Methods
 
-len() – Returns the number of items (like characters in a string).
+```len() – # Returns the number of items (like characters in a string).```
 Example:
-len("apple") → 5
+```len("apple") → 5```
 
 lower() – Changes all letters in a string to lowercase.
 Example:
